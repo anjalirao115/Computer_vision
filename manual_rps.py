@@ -12,9 +12,6 @@ def get_user_choice() -> str :
   
 def get_winner(computer_choice, user_choice):
 
-    #computer_choice = get_computer_choice(words)
-    #user_choice = get_user_choice()
-
     print(f"Computer chose {computer_choice}") 
 
     if computer_choice == 'rock' and user_choice == 'paper':
