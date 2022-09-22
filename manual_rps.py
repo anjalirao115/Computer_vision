@@ -16,15 +16,15 @@ def get_winner(computer_choice, user_choice):
 
     if computer_choice == 'rock' and user_choice == 'paper':
         print('You win')
-    elif computer_choice == 'paper' and user_choice=='rock':
+    elif computer_choice == 'paper' and user_choice == 'rock':
         print('Computer wins')    
-    elif computer_choice == 'rock' and user_choice=='scissors':
+    elif computer_choice == 'rock' and user_choice == 'scissors':
         print('Computer wins')
-    elif computer_choice == 'scissors' and user_choice=='rock':
+    elif computer_choice == 'scissors' and user_choice == 'rock':
         print('You win')    
-    elif computer_choice == 'paper' and user_choice=='scissors':
+    elif computer_choice == 'paper' and user_choice == 'scissors':
         print('You win')
-    elif computer_choice == 'scissors' and user_choice=='paper':
+    elif computer_choice == 'scissors' and user_choice == 'paper':
         print('Computer wins')   
     elif computer_choice == user_choice:
         print("It's a draw !!")     
