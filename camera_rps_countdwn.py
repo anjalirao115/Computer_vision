@@ -32,7 +32,7 @@ def countdown():
     return tstart        
  
 def get_camera_choice() -> str:
-    tstart = time.time()
+    tstart = countdown()
     while True: 
         ret, frame = cap.read()
         resized_frame = cv2.resize(frame, (224, 224), interpolation = cv2.INTER_AREA)
@@ -46,7 +46,7 @@ def get_camera_choice() -> str:
         # Press q to close the window
         print(prediction)
         #if cv2.waitKey(1) & 0xFF == ord('q'):
-        if time.time()>tstart+5:
+        if time.time()>tstart+8:
             break
             
     # After the loop release the cap object
